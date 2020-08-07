@@ -1,0 +1,29 @@
+/**/build/*
+*.iml
+
+# OS X
+.DS_Store
+
+# Xcode
+!/**/cocos2d_libs.xcodeproj/
+!/**/cocos2d_tests.xcodeproj/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+profile
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+.idea/
+README.PDF
+
+# Firebase
+GoogleService-Info.plist

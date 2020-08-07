@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+# target 'Cocos2dxSample-desktop' do
+#   # Comment the next line if you don't want to use dynamic frameworks
+#   use_frameworks!
+
+#   # Pods for Cocos2dxSample-desktop
+
+# end
+
+target 'Cocos2dxSample-mobile' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Cocos2dxSample-mobile
+  pod 'KarteCocos2dx', :path => '../../../'
+  
+  pod 'Firebase/Core'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Messaging'
+
+  target 'Cocos2dxSample-mobileTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

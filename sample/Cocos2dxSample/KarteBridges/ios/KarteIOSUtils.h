@@ -1,0 +1,43 @@
+//
+//  Copyright 2020 PLAID, Inc.
+//
+//  Licensed under the Apache License, Version 2.0 (the "License");
+//  you may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at
+//
+//      https://www.apache.org/licenses/LICENSE-2.0
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
+//
+#ifdef __cplusplus
+#ifndef KarteIOSUtils_h
+#define KarteIOSUtils_h
+
+#import <Foundation/Foundation.h>
+
+class KarteIOSUtils {
+    
+public:
+    static const char* cstringWithNSString(NSString* nsstring);
+    
+    static const char* cstringJsonWithNSArray(NSArray *array);
+    
+    static const char* cstringJsonWithNSDictionary(NSDictionary *dictionary);
+    
+    static NSString* nsstringWithCString(const char* cstring);
+    
+    static NSArray* nsarrayWithCStringJson(const char* cstring);
+    
+    static NSDictionary* nsdictionaryWithCStringJson(const char* cstring);
+    
+private:
+    static const char* cstringJsonWithContainer(id container);
+};
+
+
+#endif /* KarteIOSUtils_h */
+#endif
